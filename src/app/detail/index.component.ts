@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'index',
 
   template: `
-    <h1>Hello from Index</h1>
+    <h1>Hello from Index in detail folder</h1>
   `
 })
 export class Index {
@@ -13,6 +13,6 @@ export class Index {
   }
 
   ngOnInit() {
-    console.log('hello `Index` component');
+    console.log('hello `Index` component in detail folder');
   }
 }
