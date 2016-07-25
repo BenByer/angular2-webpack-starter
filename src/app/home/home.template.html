@@ -1,22 +1,21 @@
 <div class="card-container">
-  <h1 x-large class="sample-content">Your Content Here</h1>
+  <h1 x-large class="sample-content">home.template.html</h1>
 
-  <div>
+  <!--<div>
     For material design components use the <a href="https://github.com/AngularClass/angular2-webpack-starter/tree/material2"><b>material2</b></a> branch
-  </div>
+  </div>-->
 
-  <hr>
+  <!--<hr>-->
 
-  <div>
+  <!--<div>
     For hot module reloading run
     <pre>npm run start:hmr</pre>
-  </div>
+  </div>-->
 
-  <hr>
+  <!--<hr>-->
 
   <div>
     <h4>Local State</h4>
-
     <form (ngSubmit)="submitState(localState.value)" autocomplete="off">
       <input type="text" [value]="localState.value" (input)="localState.value = $event.target.value">
       <br>
@@ -27,10 +26,6 @@
       <br>
       <button md-raised-button color="primary">Submit Local State to App State</button>
     </form>
-
-
     <pre>this.localState = {{ localState | json }}</pre>
-
   </div>
-
 </div>

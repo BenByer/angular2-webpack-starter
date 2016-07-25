@@ -1,32 +1,31 @@
+<div>Biznas.io</div>
 <nav>
   <span>
-    <a [routerLink]=" ['./'] ">
-      Index
-    </a>
+    <a [routerLink]=" ['./'] ">Index</a>
   </span>
   |
   <span>
-    <a [routerLink]=" ['./home'] ">
-      Home
-    </a>
+    <a [routerLink]=" ['./home'] ">Home</a>
   </span>
   |
   <span>
-    <a [routerLink]=" ['./detail'] ">
-      Detail
-    </a>
+    <a [routerLink]=" ['./detail'] ">Detail</a>
   </span>
   |
   <span>
-    <a [routerLink]=" ['./about'] ">
-      About
-    </a>
+    <a [routerLink]=" ['./main'] ">Main</a>
+  </span>
+  |
+  <span>
+    <a [routerLink]=" ['./about'] ">About</a>
   </span>
 </nav>
 
-<main>
-  <router-outlet></router-outlet>
-</main>
+<header>
+  <main></main>
+</header>
+
+<router-outlet></router-outlet>
 
 <h1>App State</h1>
 <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>

@@ -70,6 +70,7 @@ app.use(express.static(ROOT, {index: false}));
 app.get('/', ngApp);
 app.get('/home', ngApp);
 app.get('/about', ngApp);
+app.get('/main', ngApp);
 
 // Server
 app.listen(3000, () => {
