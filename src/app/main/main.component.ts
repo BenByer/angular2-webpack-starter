@@ -16,8 +16,6 @@ console.log('`Main` component loaded asynchronously');
 })
 
 export class Main {
-  title = 'Smart App Development For Innovative Companies';
-  subtitle = 'Build Your App Today';
   localState;
   constructor(public route: ActivatedRoute) {
 
@@ -29,9 +27,10 @@ export class Main {
       .subscribe((data: any) => {
         // your resolved data from route
         this.localState = data.yourData;
-      });
+        console.log('hello `Main` ngOnInit', this.localState);
+     });
 
-    console.log('hello `Main` component');
+    console.log('hello `Main` component', this.localState);
     // static data that is bundled
     // var mockData = require('assets/mock-data/mock-data.json');
     // console.log('mockData', mockData);

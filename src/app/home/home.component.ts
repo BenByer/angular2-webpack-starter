@@ -24,15 +24,19 @@ import { HeaderComponent } from '../header/index';
 })
 export class Home {
   // Set our default values
-  localState = { value: '' };
+  localState = { };
+  
   // TypeScript public modifiers
-  constructor(public appState: AppState, public title: Title) {
+  constructor(public appState: AppState, public title1: Title) {
 
   }
 
   ngOnInit() {
-    console.log('hello `Home` component');
     // this.title.getData().subscribe(data => this.data = data);
+    var textData = require('assets/homedata.json');
+    this.appState.set('title', textData.title);
+    this.appState.set('subtitle', textData.subtitle);
+    this.appState.set('button', textData.button);
   }
 
   submitState(value) {

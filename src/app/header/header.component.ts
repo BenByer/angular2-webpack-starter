@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AppState } from '../app.service';
 
 
 @Component({
@@ -11,20 +12,19 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
   title = '';
   subtitle = '';
-
-  constructor(private router: Router) {
+  button = '';
+  constructor(private router: Router, public appState: AppState) {
 
   }
 
   ngOnInit() {
     // this.heroService.getHeroes().then(heroes => this.heroes = heroes.slice(2, 7));
-    var textData = require('assets/headerdata.json');
-    console.log('header  textData', textData.title);
-    this.title = textData.title;
-    this.subtitle = textData.subtitle;
-    console.log('header  textData', this.title);
-    console.log('header  textData', this.subtitle);
-  }
+    this.title = this.appState.state.title;
+    this.subtitle = this.appState.state.subtitle;
+    this.button = this.appState.state.button;
+    console.log('hello `HeaderComponent` this.title', this.appState.state.title);
+    console.log('hello `HeaderComponent`  this.subtitle', this.appState.state.subtitle);
+ }
 
   gotoDetail() {
     let link = ['/learn'];

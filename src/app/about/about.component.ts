@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AppState } from '../app.service';
+
 /*
  * We're loading this component asynchronously
  * We are using some magic with es6-promise-loader that will wrap the module with a Promise
@@ -15,7 +17,9 @@ console.log('`About` component loaded asynchronously');
 })
 export class About {
   localState;
-  constructor(public route: ActivatedRoute) {
+  title;
+  subtitle;
+  constructor(public appState: AppState, public route: ActivatedRoute) {
 
   }
 
@@ -26,8 +30,12 @@ export class About {
         // your resolved data from route
         this.localState = data.yourData;
       });
-
-    console.log('hello `About` component');
+    var textData = require('assets/aboutdata.json');
+    this.appState.set('title', textData.title);
+    this.appState.set('subtitle', textData.subtitle);
+    this.title = textData.title;
+    this.subtitle = textData.subtitle;
+    console.log('hello `About` component', this.title);
     // static data that is bundled
     //var mockData = require('assets/mock-data/mock-data.json');
     //console.log('mockData', mockData);
