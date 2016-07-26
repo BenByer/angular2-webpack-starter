@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+
 /*
  * We're loading this component asynchronously
  * We are using some magic with es6-promise-loader that will wrap the module with a Promise
@@ -13,6 +14,7 @@ console.log('`Main` component loaded asynchronously');
   styleUrls: ['./main.style.css'],
   templateUrl: './main.template.html',
 })
+
 export class Main {
   title = 'Smart App Development For Innovative Companies';
   subtitle = 'Build Your App Today';

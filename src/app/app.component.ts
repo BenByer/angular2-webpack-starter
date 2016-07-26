@@ -4,6 +4,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
 import { AppState } from './app.service';
+import { FooterComponent } from './footer/index';
 
 /*
  * App Component
@@ -14,6 +15,8 @@ import { AppState } from './app.service';
   encapsulation: ViewEncapsulation.None,
   styleUrls: ['./app.style.css'],
   templateUrl: './app.template.html',
+  directives: [ FooterComponent ],
+
 })
 export class App {
   angularclassLogo = 'assets/img/angularclass-avatar.png';
