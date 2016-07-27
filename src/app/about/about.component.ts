@@ -2,11 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AppState } from '../app.service';
 
-/*
- * We're loading this component asynchronously
- * We are using some magic with es6-promise-loader that will wrap the module with a Promise
- * see https://github.com/gdi2290/es6-promise-loader for more info
- */
+import { CommonPage } from '../common-page/common-page.component';
 
 console.log('`About` component loaded asynchronously');
 
@@ -14,47 +10,26 @@ console.log('`About` component loaded asynchronously');
   selector: 'about',
   styleUrls: ['./about.style.css'],
   templateUrl: './about.template.html',
+  directives: [CommonPage],
 })
+
 export class About {
   localState;
   title;
   subtitle;
   constructor(public route: ActivatedRoute) {
-
   }
 
   ngOnInit() {
-    this.route
-      .data
-      .subscribe((data: any) => {
-        // your resolved data from route
-        this.localState = data.yourData;
-      });
+    this.route.data.subscribe((data: any) => {
+      // your resolved data from route
+      this.localState = data.yourData;
+    });
+
     var textData = require('assets/aboutdata.json');
     this.title = textData.title;
     this.subtitle = textData.subtitle;
     console.log('hello `About` component', this.title);
-    // static data that is bundled
-    //var mockData = require('assets/mock-data/mock-data.json');
-    //console.log('mockData', mockData);
 
-
-    // if you're working with mock data you can also use http.get('assets/mock-data/mock-data.json')
-    // this.asyncDataWithWebpack();
   }
-  asyncDataWithWebpack() {
-    // you can also async load mock data with 'es6-promise-loader'
-    // you would do this if you don't want the mock-data bundled
-    // remember that 'es6-promise-loader' is a promise
-    // var asyncMockDataPromiseFactory = require('es6-promise!assets/mock-data/mock-data.json');
-    // setTimeout(() => {
-    //
-    //   let asyncDataPromise = asyncMockDataPromiseFactory();
-    //   asyncDataPromise.then(json => {
-    //     console.log('async mockData', json);
-    //   });
-    //
-    // });
-  }
-
 }

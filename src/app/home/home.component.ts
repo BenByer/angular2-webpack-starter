@@ -32,9 +32,11 @@ export class Home {
   ngOnInit() {
     // this.title.getData().subscribe(data => this.data = data);
     var textData = require('assets/homedata.json');
+    var textTimelineData = require('assets/timelineIndexData.json');
     this.appState.set('title', textData.title);
     this.appState.set('subtitle', textData.subtitle);
     this.appState.set('button', textData.button);
+    console.log(textTimelineData);
   }
 
   submitState(value) {
