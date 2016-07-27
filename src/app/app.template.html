@@ -1,43 +1,16 @@
 <div>Biznas.io</div>
 <nav>
-  <span>
-    <a [routerLink]=" ['./'] ">Index</a>
-  </span>
-  |
-  <span>
-    <a [routerLink]=" ['./home'] ">Home</a>
-  </span>
-  |
-  <span>
-    <a [routerLink]=" ['./detail'] ">Detail</a>
-  </span>
-  |
-  <span>
-    <a [routerLink]=" ['./main'] ">Main</a>
-  </span>
-  |
-  <span>
-    <a [routerLink]=" ['./process'] ">Process</a>
-  </span>
-  |
-  <span>
-    <a [routerLink]=" ['./platform'] ">Platform</a>
-  </span>
-  |
-  <span>
-    <a [routerLink]=" ['./projects'] ">Projects</a>
-  </span>
-  |
-  <span>
-    <a [routerLink]=" ['./about'] ">About</a>
-  </span>
+  <span><a [routerLink]=" ['./'] ">Index</a></span>  |
+  <!--<span><a [routerLink]=" ['./home'] ">Home</a></span>  |
+  <span><a [routerLink]=" ['./detail'] ">Detail</a></span>  |
+  <span><a [routerLink]=" ['./main'] ">Main</a></span>  |-->
+  <span><a [routerLink]=" ['./process'] ">Process</a></span>  |
+  <span><a [routerLink]=" ['./platform'] ">Platform</a></span>  |
+  <span><a [routerLink]=" ['./projects'] ">Projects</a></span>  |  
+  <span><a [routerLink]=" ['./about'] ">About</a></span>
 </nav>
 
 
 <router-outlet></router-outlet>
-
-
-<h1>App State</h1>
-<pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
 
 <biznas-footer></biznas-footer>

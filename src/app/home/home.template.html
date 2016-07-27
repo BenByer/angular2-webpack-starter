@@ -1,18 +1,3 @@
 
 <biznas-header></biznas-header>
 
-<div class="card-container">
-  <div>
-    <h4>Local State</h4>
-    <form (ngSubmit)="submitState(localState.value)" autocomplete="off">
-      <br>
-      Rather than wiring up two-way data-binding ourselves with [value] and (input)
-      we can use Angular's [(ngModel)] syntax
-      <br>
-      <input type="text" name="textInput" [(ngModel)]="localState.value">
-      <br>
-      <button md-raised-button color="primary">Submit Local State to App State</button>
-    </form>
-    <pre>this.localState = {{ localState | json }}</pre>
-  </div>
-</div>
