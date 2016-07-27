@@ -6,7 +6,7 @@ import { NoContent } from './no-content';
 import { DataResolver } from './app.resolver';
 
 export const routes: RouterConfig = [
-  { path: '', component: 'Main' },
+  { path: '',      component: Home },
   { path: 'home',  component: Home },
   // make sure you match the component type string to the require in asyncRoutes
   { path: 'about', component: 'About',
@@ -19,7 +19,8 @@ export const routes: RouterConfig = [
     children: [
       { path: '', component: 'Index' }  // must be included
     ]},
-  { path: 'main', component: 'Main',
+  {
+    path: 'main', component: Home,
     resolve: {
       'yourData': DataResolver
     }},

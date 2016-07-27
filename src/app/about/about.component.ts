@@ -19,7 +19,7 @@ export class About {
   localState;
   title;
   subtitle;
-  constructor(public appState: AppState, public route: ActivatedRoute) {
+  constructor(public route: ActivatedRoute) {
 
   }
 
@@ -31,8 +31,6 @@ export class About {
         this.localState = data.yourData;
       });
     var textData = require('assets/aboutdata.json');
-    this.appState.set('title', textData.title);
-    this.appState.set('subtitle', textData.subtitle);
     this.title = textData.title;
     this.subtitle = textData.subtitle;
     console.log('hello `About` component', this.title);
