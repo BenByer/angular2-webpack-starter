@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 
 
@@ -9,7 +10,14 @@ import { Router } from '@angular/router';
 })
 
 export class FooterComponent {
-  footerText = "Copyright &copy; 2016 Biznas Innovations, Inc.";
-  constructor(private router: Router) {
+  public footerText: string;
+  title;
+  subtitle;
+  constructor(public route: ActivatedRoute) {
+  }
+
+  ngOnInit() {
+    var text = require('assets/footertext.json');
+    this.footerText = text.footertext;
   }
 }

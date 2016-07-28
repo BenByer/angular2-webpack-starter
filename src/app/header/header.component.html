@@ -1,22 +1,11 @@
-<div>Biznas.io</div>
-<nav>
-    <span><a [routerLink]=" ['./'] ">Home</a></span>  |
-    <!--<span><a [routerLink]=" ['./home'] ">Home</a></span>  |
-    <span><a [routerLink]=" ['./detail'] ">Detail</a></span>  |
-    <span><a [routerLink]=" ['./main'] ">Main</a></span>  |-->
-    <span><a [routerLink]=" ['./process'] ">Process</a></span>  |
-    <span><a [routerLink]=" ['./platform'] ">Platform</a></span>  |
-    <span><a [routerLink]=" ['./projects'] ">Projects</a></span>  |
-    <span><a [routerLink]=" ['./about'] ">About</a></span>
-</nav>
 
-<!--<header class="o-header">
+<header class="o-header">
   <div class="o-header__overlay"></div>
   <div class="o-header__wrapper">
     <div class="o-header__content">
       <br><br><br>
       <h1>{{title}}</h1>
-      <h3>{{subtitle}}</h3>
+      <h3 *ngIf="subtitle">{{subtitle}}</h3>
       <div *ngIf="button">
         <a href="#services" class="button button-primary">{{button}}</a>
       </div>
@@ -24,4 +13,4 @@
     <div class="o-header__bottom">
     </div>
   </div>
-</header>-->
+</header>

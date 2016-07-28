@@ -7,7 +7,8 @@ import { DataResolver } from './app.resolver';
 
 export const routes: RouterConfig = [
   { path: '',      component: Home },
-  { path: 'home',  component: Home },
+  { path: 'home', component: Home },
+  { path: 'platform', component: 'Platform' },
   // make sure you match the component type string to the require in asyncRoutes
   { path: 'about', component: 'About',
     resolve: {
@@ -34,6 +35,7 @@ export const routes: RouterConfig = [
 export const asyncRoutes: AsyncRoutes = {
   // we have to use the alternative syntax for es6-promise-loader to grab the routes
   'About': require('es6-promise-loader!./about'),
+  'Platform': require('es6-promise-loader!./platform'),
   'Main': require('es6-promise-loader!./main'),
   'Detail': require('es6-promise-loader!./detail'),
   'Index': require('es6-promise-loader!./detail'), // must be exported with detail/index.ts
@@ -45,6 +47,7 @@ export const asyncRoutes: AsyncRoutes = {
 export const prefetchRouteCallbacks: Array<IdleCallbacks> = [
   asyncRoutes['About'],
   asyncRoutes['Main'],
+  asyncRoutes['Platform'],
   asyncRoutes['Detail'],
    // es6-promise-loader returns a function
 ];

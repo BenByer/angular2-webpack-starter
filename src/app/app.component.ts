@@ -4,7 +4,8 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
 import { AppState } from './app.service';
-import { FooterComponent } from './footer/index';
+import { FooterComponent } from '../biznas/footer/index';
+import { NavbarComponent } from '../biznas/navbar/index';
 
 /*
  * App Component
@@ -15,7 +16,7 @@ import { FooterComponent } from './footer/index';
   encapsulation: ViewEncapsulation.None,
   styleUrls: ['./app.style.css'],
   templateUrl: './app.template.html',
-  directives: [ FooterComponent ],
+  directives: [FooterComponent, NavbarComponent ],
 
 })
 export class App {

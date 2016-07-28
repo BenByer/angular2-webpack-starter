@@ -1,16 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { AppState } from '../app.service';
 
+import { TimelineItemComponent } from '../timeline-item/timeline-item.component';
 
 @Component({
   selector: 'biznas-timeline',
   templateUrl: './timeline.component.html',
-  styleUrls: ['./timeline.component.css']
+  styleUrls: ['./timeline.component.css'],
+  directives: [ TimelineItemComponent ],
 })
 
 export class TimelineComponent implements OnInit {
+  @Input() timelineData: any;
   title = '';
+  timelineItems: any[];
   subtitle = '';
   button = '';
   constructor(private router: Router, public appState: AppState) {
@@ -19,11 +23,9 @@ export class TimelineComponent implements OnInit {
 
   ngOnInit() {
     // this.heroService.getHeroes().then(heroes => this.heroes = heroes.slice(2, 7));
-    this.title = this.appState.state.title;
+    this.title = this.timelineData.title;
     this.subtitle = this.appState.state.subtitle;
-    this.button = this.appState.state.button;
-    console.log('hello `TimelineComponent` this.title', this.appState.state.title);
-    console.log('hello `TimelineComponent`  this.subtitle', this.appState.state.subtitle);
+    this.timelineItems = this.timelineData.timeline;
  }
 
   gotoDetail() {

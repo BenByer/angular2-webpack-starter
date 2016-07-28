@@ -1,15 +1,10 @@
-<header class="o-header">
-  <div class="o-header__overlay"></div>
-  <div class="o-header__wrapper">
-    <div class="o-header__content">
-      <br><br><br>
-      <h1>{{title}}</h1>
-      <h3>{{subtitle}}</h3>
-      <div *ngIf="button">
-        <a href="#services" class="button button-primary">{{button}}</a>
-      </div>
-    </div>
-    <div class="o-header__bottom">
-    </div>
+
+<div class="o-timeline__line"></div>
+<div class="o-timelineWords">
+  <div class="o-timelineWords__content">
+    <h2>{{title}}</h2>
   </div>
-</header>
+  <div *ngFor="let item of timelineItems">
+    <biznas-timeline-item [timelineItem]='item'></biznas-timeline-item>
+  </div>
+</div>
