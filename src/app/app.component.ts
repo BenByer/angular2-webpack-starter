@@ -4,7 +4,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
 import { AppState } from './app.service';
-import { FooterComponent } from '../biznas/footer/index';
+import { CopyrightComponent } from '../biznas/copyright/index';
 import { NavbarComponent } from '../biznas/navbar/index';
 
 /*
@@ -16,7 +16,7 @@ import { NavbarComponent } from '../biznas/navbar/index';
   encapsulation: ViewEncapsulation.None,
   styleUrls: ['./app.style.css'],
   templateUrl: './app.template.html',
-  directives: [FooterComponent, NavbarComponent ],
+  directives: [CopyrightComponent, NavbarComponent ],
 
 })
 export class App {

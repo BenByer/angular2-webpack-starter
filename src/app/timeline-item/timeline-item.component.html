@@ -1,7 +1,7 @@
 
 <div class="o-timelineItem">
   <div class="o-timelineItem__content">
-    <h3>{{title}}</h3>
-    <p>{{content}}</p>
+    <h3 *ngIf="title">{{title}}</h3>
+    <p *ngIf="content">{{content}}</p>
   </div>
 </div>

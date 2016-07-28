@@ -1,7 +1,7 @@
 <common-page>
   <div>
-    <h1>{{title}}</h1>
-    <h3>{{subtitle}}</h3>
+    <h1 *ngIf="title">{{title}}</h1>
+    <h3 *ngIf="subtitle">{{subtitle}}</h3>
   </div>
 </common-page>
 

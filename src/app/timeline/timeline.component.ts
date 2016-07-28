@@ -15,22 +15,13 @@ export class TimelineComponent implements OnInit {
   @Input() timelineData: any;
   title = '';
   timelineItems: any[];
-  subtitle = '';
-  button = '';
+  footer = '';
   constructor(private router: Router, public appState: AppState) {
   }
 
   ngOnInit() {
-    // this.heroService.getHeroes().then(heroes => this.heroes = heroes.slice(2, 7));
     this.title = this.timelineData.title;
-    this.subtitle = this.appState.state.subtitle;
     this.timelineItems = this.timelineData.timeline;
+    this.footer = this.timelineData.footer;
  }
-
-  gotoDetail() {
-    let link = ['/learn'];
-    this.router.navigate(link);
-  }
-
-
 }

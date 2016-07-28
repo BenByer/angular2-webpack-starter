@@ -29,7 +29,5 @@ export class About {
     var textData = require('assets/aboutdata.json');
     this.title = textData.title;
     this.subtitle = textData.subtitle;
-    console.log('hello `About` component', this.title);
-
   }
 }

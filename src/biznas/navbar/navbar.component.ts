@@ -27,8 +27,6 @@ export class NavbarComponent implements OnInit {
     this.title = this.appState.state.title;
     this.subtitle = this.appState.state.subtitle;
     this.button = this.appState.state.button;
-    console.log('hello `NavbarComponent` this.title', this.appState.state.title);
-    console.log('hello `NavbarComponent` this.subtitle', this.appState.state.subtitle);
  }
 
   gotoDetail() {

@@ -5,13 +5,13 @@ import { AppState } from '../app.service';
 import { CommonPage } from '../common-page/common-page.component';
 import { HeaderComponent } from '../header/header.component';
 import { TimelineComponent } from '../timeline/timeline.component';
-import { MoreInfo } from '../../biznas/more-info/more-info.component';
+import { Footer } from '../../biznas/footer/footer.component';
 
 @Component({
   selector: 'home',
   styleUrls: ['./home.style.css'],
   templateUrl: './home.template.html',
-  directives: [CommonPage, HeaderComponent, TimelineComponent, MoreInfo],
+  directives: [CommonPage, HeaderComponent, TimelineComponent, Footer],
 })
 
 export class Home {

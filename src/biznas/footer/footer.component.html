@@ -1,2 +1,7 @@
 
-<p>{{footerText}}</p> 
+<section class="o-section c-purchase">
+  <h2>{{title}}</h2>
+  <span *ngFor="let email of emailItems">
+    <a href="mailto:{{email.address}}?subject={{email.subject}}" class="button primary">{{email.buttontext}}</a>
+  </span>
+</section>

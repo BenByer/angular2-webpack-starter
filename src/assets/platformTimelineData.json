@@ -1,0 +1,22 @@
+{
+  "title": "",
+  "timeline": [
+    {
+      "title": "Context CMS Module",
+      "content": "Content should cater to the user, with Biznas CMS depending on who you are you will see different content than someone else going to the same screen. Tag visitors using time, location, channel, gender or custom tags."
+    },
+    {
+      "title": "Payment Module",
+      "content": "You decide the pricing strategy and we handle the rest. Customize your pricing to fit your needs but don't worry about all the extra details. Our reusable payment module factors in all the 1 off use cases to keep you focused on more important technical items."
+    },
+    {
+      "title": "Security Modules",
+      "content": "User permissions are becoming more complex, demands from customers for more customization is only increasing. Simply use our pre-built structure and customize your security to suit your needs."
+    },
+    {
+      "title": "Data Query Module",
+      "content": "Leveraging Object Relational Mapping we have built a simple and intuitive query builder using rest api for high performance."
+    }
+  ],
+  "footer": "The Biznas platform is built on the leading enterprise grade technologies focusing on scalability as well as being open and integratable."
+}
