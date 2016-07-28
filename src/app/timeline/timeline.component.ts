@@ -18,7 +18,6 @@ export class TimelineComponent implements OnInit {
   subtitle = '';
   button = '';
   constructor(private router: Router, public appState: AppState) {
-
   }
 
   ngOnInit() {

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'biznas-more-info',
   templateUrl: './more-info.component.html',
@@ -11,6 +10,7 @@ import { Router } from '@angular/router';
 
 export class MoreInfo {
   public footerText: string;
+  emailItems: any[];
   title;
   subtitle;
   constructor(public route: ActivatedRoute) {
@@ -18,6 +18,8 @@ export class MoreInfo {
 
   ngOnInit() {
     var text = require('assets/more-infotext.json');
-    this.footerText = text.footertext;
+    this.emailItems = text.email;
+    console.log("emailItems", this.emailItems);
+    this.title = text.title;
   }
 }

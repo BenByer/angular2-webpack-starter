@@ -4,6 +4,7 @@ import { AppState } from '../app.service';
 
 import { CommonPage } from '../common-page/common-page.component';
 import { HeaderComponent } from '../header/header.component';
+import { MoreInfo } from '../../biznas/more-info/more-info.component';
 
 console.log('`Platform` component loaded asynchronously');
 
@@ -11,7 +12,7 @@ console.log('`Platform` component loaded asynchronously');
   selector: 'platform',
   styleUrls: ['./platform.style.css'],
   templateUrl: './platform.template.html',
-  directives: [CommonPage, HeaderComponent],
+  directives: [CommonPage, HeaderComponent, MoreInfo],
 })
 
 export class Platform {

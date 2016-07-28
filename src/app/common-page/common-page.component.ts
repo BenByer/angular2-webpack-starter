@@ -2,6 +2,7 @@
 import { Page } from '../../biznas/page/page.component';
 import { NavbarComponent } from '../../biznas/navbar/navbar.component';
 import { FooterComponent } from '../../biznas/footer/footer.component';
+import { MoreInfo } from '../../biznas/more-info/more-info.component';
 
 @Component({
   selector: 'common-page',
