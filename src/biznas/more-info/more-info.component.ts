@@ -4,12 +4,12 @@ import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'biznas-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css'] 
+  selector: 'biznas-more-info',
+  templateUrl: './more-info.component.html',
+  styleUrls: ['./more-info.component.css']
 })
 
-export class FooterComponent {
+export class MoreInfo {
   public footerText: string;
   title;
   subtitle;
@@ -17,7 +17,7 @@ export class FooterComponent {
   }
 
   ngOnInit() {
-    var text = require('assets/footertext.json');
+    var text = require('assets/more-infotext.json');
     this.footerText = text.footertext;
   }
 }
