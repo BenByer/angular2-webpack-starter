@@ -1,0 +1,28 @@
+{
+  "section1": [
+    {
+      "title": "The Biznas software solves two key pains for SaaS companies",
+      "subtitle": "These pains include: Enabling SMEs to grow quickly and efficiently to maximizing development resource allocations to focus on core technology"
+    }
+  ],
+  "section2": [
+    {
+      "title": "Why are we different?",
+      "image": [
+        {
+          "img": "/assets/BiznasBurger2.png",
+          "width": "100%",
+          "alt": "Two bananas at once!",
+          "title": "Two bananas at once!",
+        }
+      ],
+      "p": [
+        {
+          "1": "The Biznas Platform removes the burden of integrating and developing a fully functioning technology",
+          "2": "We build complete vertical modules - allowing you to receive light-weight software that is highly scalable, integratable and agile",
+          "3": "Allowing you to stand out from your competition"
+        }
+      ]
+    }
+  ]
+}

@@ -16,7 +16,7 @@ import { NavbarComponent } from '../biznas/navbar/index';
   encapsulation: ViewEncapsulation.None,
   styleUrls: ['./app.style.css'],
   templateUrl: './app.template.html',
-  directives: [CopyrightComponent, NavbarComponent ],
+  directives: [ CopyrightComponent, NavbarComponent ],
 
 })
 export class App {

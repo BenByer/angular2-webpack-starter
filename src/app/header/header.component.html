@@ -4,10 +4,10 @@
   <div class="o-header__wrapper">
     <div class="o-header__content">
       <br><br><br>
-      <h1 *ngIf="title">{{title}}</h1>
-      <h3 *ngIf="subtitle">{{subtitle}}</h3>
-      <div *ngIf="button">
-        <a href="#services" class="button button-primary">{{button}}</a>
+      <h1 *ngIf="content.title">{{content.title}}</h1>
+      <h3 *ngIf="content.subtitle">{{content.subtitle}}</h3>
+      <div *ngIf="content.button">
+        <a href="#services" class="button button-primary">{{content.button}}</a>
       </div>
     </div>
     <div class="o-header__bottom">

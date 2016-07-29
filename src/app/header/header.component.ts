@@ -4,6 +4,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 
 import { AppState } from '../app.service';
 
+import { HeaderContent } from './header.content';
 
 @Component({
   selector: 'biznas-header',
@@ -14,33 +15,11 @@ import { AppState } from '../app.service';
   ],
 })
 
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
-  @Input() headerData: any;
-
-  public title: string;
-
-  public subtitle: string;
-  public button: string;
-
+  @Input()
+  public content: HeaderContent;
 
   constructor(private router: Router, public appState: AppState) {
-
   }
-
-  ngOnInit() {
-    // this.heroService.getHeroes().then(heroes => this.heroes = heroes.slice(2, 7));
-    this.title = this.headerData.title;
-    this.subtitle = this.headerData.subtitle;
-    this.button = this.headerData.button;
-    //console.log('hello `HeaderComponent` this.title', this.appState.state.title);
-    console.log('hello `HeaderComponent`  this.headerData', this.headerData);
- }
-
-  gotoDetail() {
-    let link = ['/learn'];
-    this.router.navigate(link);
-  }
-
-
 }

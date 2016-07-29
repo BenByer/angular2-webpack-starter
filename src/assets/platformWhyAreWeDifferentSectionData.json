@@ -1,0 +1,12 @@
+{
+  "title": "Why are we different?", 
+  "image": "/assets/img/BiznasBurger2.png",
+  "width": "300px",
+  "alt": "Two bananas at once!",
+  "imagetitle": "Two bananas at once!",
+  "lines": [    
+    { "item": "The Biznas Platform removes the burden of integrating and developing a fully functioning technology" },
+    { "item": "We build complete vertical modules - allowing you to receive light-weight software that is highly scalable, integratable and agile" },
+    { "item": "Allowing you to stand out from your competition" }
+  ]
+}

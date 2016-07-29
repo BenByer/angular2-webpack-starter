@@ -24,5 +24,6 @@ export class Home {
   ngOnInit() {
     this.childHeaderData = require('assets/indexPageHeaderData.json');
     this.childTimelineData = require('assets/indexPageTimelineData.json');
+    console.log('this.childHeaderData', this.childHeaderData);
   }
 }
