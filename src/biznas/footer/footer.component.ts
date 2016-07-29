@@ -19,7 +19,6 @@ export class Footer {
   ngOnInit() {
     var text = require('assets/footertext.json');
     this.emailItems = text.email;
-    console.log("emailItems", this.emailItems);
     this.title = text.title;
   }
 }

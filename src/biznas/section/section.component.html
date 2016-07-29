@@ -1,6 +1,8 @@
 
 <section class="o-section c-purchase">
-  <h4 *ngIf='title'>{{title}}</h4>
-  <h3 *ngIf='subtitle'>{{subtitle}}</h3>
-  
+  <h4 *ngIf='content.title'>{{content.title}}</h4>
+  <h3 *ngIf='content.lines'>
+    <div *ngFor="let line of content.lines">{{line.item}}</div>
+  </h3>
+  <biznas-testimonial *ngIf='content.testimonialData' [content]='content.testimonialData'></biznas-testimonial>
 </section>

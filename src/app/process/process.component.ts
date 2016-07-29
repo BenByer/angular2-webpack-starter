@@ -5,6 +5,7 @@ import { AppState } from '../app.service';
 import { CommonPage } from '../common-page/common-page.component';
 import { HeaderComponent } from '../header/header.component';
 import { TimelineComponent } from '../timeline/timeline.component';
+import { Testimonial } from '../testimonial/testimonial.component';
 import { Section } from '../../biznas/section/section.component';
 import { Footer } from '../../biznas/footer/footer.component';
 
@@ -12,13 +13,17 @@ import { Footer } from '../../biznas/footer/footer.component';
   selector: 'process',
   styleUrls: ['./process.style.css'],
   templateUrl: './process.template.html',
-  directives: [CommonPage, HeaderComponent, Footer, TimelineComponent, Section],
+  directives: [CommonPage, HeaderComponent, Footer, TimelineComponent, Testimonial, Section],
 })
 
 export class Process {
   headerData: any;
+  sectionData: any;
 
   constructor(public route: ActivatedRoute) {
     this.headerData = require('assets/processHeaderData.json');
+    this.sectionData = require('assets/processSectionData.json');
+    console.log('Process sectionData.title', this.sectionData.title);
+    console.log('Process sectionData', this.sectionData);
  }
 }

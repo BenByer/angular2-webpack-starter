@@ -1,4 +1,6 @@
 {
   "title": "The Biznas software solves two key pains for SaaS companies",
-  "subtitle": "These pains include: Enabling SMEs to grow quickly and efficiently to maximizing development resource allocations to focus on core technology"
+  "lines": [
+    { "item": "These pains include: Enabling SMEs to grow quickly and efficiently to maximizing development resource allocations to focus on core technology" }
+  ]
 }

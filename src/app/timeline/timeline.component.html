@@ -2,14 +2,14 @@
 <div class="o-timeline__line"></div>
 <div class="o-timelineWords">
   <div class="o-timelineWords__content">
-    <h2 *ngIf="title">{{title}}</h2>
+    <h2 *ngIf="content.title">{{content.title}}</h2>
   </div>
-  <div *ngFor="let item of timelineItems">
-    <biznas-timeline-item [timelineItem]='item'></biznas-timeline-item>
+  <div *ngFor="let item of content.timeline">
+    <biznas-timeline-item [content]='item'></biznas-timeline-item>
   </div>
   <div class="o-timelineWords__footer">
     <br>
-    <h4 *ngIf="footer">{{footer}}</h4>
+    <h4 *ngIf="content.footer">{{content.footer}}</h4>
     <br>
   </div>
 </div>

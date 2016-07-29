@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 
+import { SectionContent } from './section.content';
+
 @Component({
   selector: 'biznas-section',
   templateUrl: './section.component.html',
@@ -9,21 +11,14 @@ import { Router } from '@angular/router';
 })
 
 export class Section {
-  @Input() sectionData: any;
+  @Input()
+  public content: SectionContent;
 
-  public footerText: string;
-  sectionText: any[];
-  title;
-  subtitle;
   constructor(public route: ActivatedRoute) {
+    console.log('Section constructor', this.content);
   }
 
   ngOnInit() {
-    //var text = require('assets/sectiontext.json');
-    //this.sectionText = text;
-    //console.log("sectionText", this.sectionText);
-    this.title = this.sectionData.title;
-    this.subtitle = this.sectionData.subtitle;
-    console.log('hello `Section`  this.sectionData', this.sectionData);
+    console.log('Section ngOnInit', this.content);
   }
 }

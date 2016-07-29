@@ -6,7 +6,7 @@ import { CommonPage } from '../common-page/common-page.component';
 import { HeaderComponent } from '../header/header.component';
 import { TimelineComponent } from '../timeline/timeline.component';
 import { Section } from '../../biznas/section/section.component';
-import { SectionDifferent } from '../section-different/section-different.component';
+import { SectionDifferent } from '../../biznas/section-different/section-different.component';
 import { Footer } from '../../biznas/footer/footer.component';
 
 @Component({
@@ -17,19 +17,20 @@ import { Footer } from '../../biznas/footer/footer.component';
 })
 
 export class Platform {
-  platformHeaderData: any;
-  platformTimelineData: any;
-  childSectionData: any;
-  whyAreWeDifferentSectionData: any;
+  headerData: any;
+  timelineData: any;
+  sectionData: any;
+  differentSectionData: any;
 
   constructor(public route: ActivatedRoute) {
   }
 
   ngOnInit() {
-    this.platformHeaderData = require('assets/platformHeaderData.json');
-    this.platformTimelineData = require('assets/platformTimelineData.json');
-    this.childSectionData = require('assets/platformSectionData.json');
-    this.whyAreWeDifferentSectionData = require('assets/platformWhyAreWeDifferentSectionData.json');
-
+    this.headerData = require('assets/platformHeaderData.json');
+    this.timelineData = require('assets/platformTimelineData.json');
+    this.sectionData = require('assets/platformSectionData.json');
+    this.differentSectionData = require('assets/platformWhyAreWeDifferentSectionData.json');
+    console.log('Platform sectionData.title', this.sectionData.title);
+    console.log('Platform sectionData.lines', this.sectionData.lines);
   }
 }

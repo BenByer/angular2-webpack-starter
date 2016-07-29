@@ -4,7 +4,6 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 
 import { AppState } from '../../app/app.service';
 
-
 @Component({
   selector: 'biznas-navbar',
   templateUrl: './navbar.component.html',
