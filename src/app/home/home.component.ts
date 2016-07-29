@@ -15,14 +15,14 @@ import { Footer } from '../../biznas/footer/footer.component';
 })
 
 export class Home {
-  childHeaderData: any;
+  headerData: any;
   childTimelineData: any;
 
   constructor(public route: ActivatedRoute) {
   }
 
   ngOnInit() {
-    this.childHeaderData = require('assets/indexPageHeaderData.json');
+    this.headerData = require('assets/indexPageHeaderData.json');
     this.childTimelineData = require('assets/indexPageTimelineData.json');
     console.log('this.childHeaderData', this.childHeaderData);
   }

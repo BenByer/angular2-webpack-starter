@@ -16,19 +16,9 @@ import { Footer } from '../../biznas/footer/footer.component';
 })
 
 export class Process {
-  childHeaderData: any;
-  //childTimelineData: any;
-  //childSectionData: any;
-  //childSectionData2: any;
+  headerData: any;
 
   constructor(public route: ActivatedRoute) {
-  }
-
-  ngOnInit() {
-    this.childHeaderData = require('assets/processHeaderData.json');
-    //this.childTimelineData = require('assets/processTimelineData.json');
-    //this.childSectionData = require('assets/processSectionData.json');
-    //this.childSectionData2 = require('assets/processSectionData2.json');
-
-  }
+    this.headerData = require('assets/processHeaderData.json');
+ }
 }
