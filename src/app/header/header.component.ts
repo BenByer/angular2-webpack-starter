@@ -8,8 +8,8 @@ import { HeaderContent } from './header.content';
 
 @Component({
   selector: 'biznas-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
+  templateUrl: './header.template.html',
+  styleUrls: ['./header.style.css'],
   directives: [
     ...ROUTER_DIRECTIVES
   ],

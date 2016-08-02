@@ -1,0 +1,154 @@
+﻿{
+  "partners": [
+    {
+      "id": "ivf",
+      "clientName": "Jason Broome",
+      "clientTitle": "CEO, Effortless IVF",
+      "quote": "If I could sum up the Biznas difference in three words I would say, \"partnerships over projects\".  They don't want to - and in fact won't - sell you large untested and costly Apps which often miss the mark and need significant redevelopment.  Instead they help you focus on identifying the minimum product you need to validate your idea.  That means less money upfront and a greater likelihood of success at launch.  That success feeds user growth and generates incremental value which can be invested in future versions.  I have saved tens of thousands of dollars in development dollars partnering with the Biznas team but more importantly I have an App people want to use.",
+
+      "header": "See how Jason, CEO of effortlessivf.ca, raised over $200k in 2 weeks with a Biznas built web page and app.",
+      "buttonText": "View Project",
+
+      "imageHuman": {
+        "src": "/assets/img/client-eivf-jasonbroome.jpg",
+        "alt": "Jason Broome, CEO Effortless IVF",
+        "title": "Jason Broome, CEO Effortless IVF"
+      },
+      "imageLogo": {
+        "src": "/assets/img/client-eivf-logo.png",
+        "alt": "Effortless IVF Logo",
+        "title": "Effortless IVF Logo"
+      },
+      "imageMain": {
+        "src": "/assets/img/IVF.png",
+        "width": "80%",
+        "height": "80%",
+        "alt": "Effortless IVF Webpage",
+        "title": "Effortless IVF Webpage"
+      },
+
+      "lines": [
+        {
+          "title": "PARTNER",
+          "text": "Effortless IVF, fertility for half the cost."
+        },
+        {
+          "title": "PROJECT",
+          "text": "Kickstarter style website campaign."
+        },
+        {
+          "title": "RESULTS",
+          "text": "$100,000 raised in first 48 hours of kickstarter campaign.  Seamless customer funnel leveraging:",
+          "extraData": [
+            { "line": "Biznas Context CMS" },
+            { "line": "Biznas payment Module" },
+            { "line": "Intercom.io" },
+            { "line": "Stripe" }
+          ]
+        },
+        {
+          "title": "",
+          "text": "Allowing their customer to learn, ask questions, talk to a doctor, register and pay."
+        }
+      ]
+    },
+    {
+      "id": "popcorn",
+      "clientName": "Wesley Forgione",
+      "clientTitle": "CEO,  Popcorn Innovations",
+      "quote": "They are start-up guys through and through. Biznas has a unique ability to tackle the project from the mind-set of \"start-up founder\" not just \"software developer\". As a result, our planning and execution has been great allowing us to control our budget and meet targeted deadlines. Definitely recommend.",
+
+      "header": "Learn about how Wes at Popcorn Innovations received a scalable app in 2 weeks.",
+      "buttonText": "View Project",
+
+      "imageHuman": {
+        "src": "/assets/img/client-popcorn-wesforgione.jpg",
+        "alt": "Wesley Forgione, CEO Popcorn Innovations",
+        "title": "Wesley Forgione, CEO Popcorn Innovations"
+      },
+      "imageLogo": {
+        "src": "/assets/img/client-popcorn-logo.png",
+        "alt": "Popcorn Innovations Logo",
+        "title": "Popcorn Innovations Logo"
+      },
+      "imageMain": {
+        "src": "/assets/img/PopcornEnabledInverse.png",
+        "width": "167px",
+        "height": "167px",
+        "alt": "Popcorn Logo",
+        "title": "Popcorn Logo"
+      },
+
+      "lines": [
+        {
+          "title": "PARTNER",
+          "text": "Popcorn Innovations"
+        },
+        {
+          "title": "PROJECT",
+          "text": "Create a community of consumers and vendors where goods and services are instantly available for purchase and use."
+        },
+        {
+          "title": "RESULTS",
+          "text": "Biznas has provided a completed 1st release MVP for Popcorn to test their community app. A successful trial was completed at a local restaurant.",
+          "extraData": [
+            { "line": "" }
+          ]
+        },
+        {
+          "title": "",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "ja2",
+      "clientName": "Aaron Kilback",
+      "clientTitle": "CEO, JA2 Technologies",
+      "quote": "When I discovered Biznas, I had gone through several companies and found it to be hard, annoying and frustrating. Not only have they exceeded my expectations by delivering a great product, they have restored my ability to wow my customers and achieve my vision. Biznas will give you new found confidence, courage and capabilities and a vision you may have never yet considered.",
+
+      "header": "See how we gave Aaron, CEO of JA2 Technologies Inc, the confidence in his technology to raise his next round of financing.",
+      "buttonText": "View Project",
+
+      "imageHuman": {
+        "src": "/assets/img/client-ja2-aaronkilback.jpg",
+        "alt": "Aaron Kilback, CEO JA2 Technologies",
+        "title": "Aaron Kilback, CEO JA2 Technologies"
+      },
+      "imageLogo": {
+        "src": "/assets/img/client-ja2-logo.png",
+        "alt": "JA2 Logo",
+        "title": "JA2 Logo"
+      },
+      "imageMain": {
+        "src": "/assets/img/ja2_logo3(Small.png",
+        "width": "100%",
+        "height": "100%",
+        "alt": "Ja2 Logo",
+        "title": "Ja2 Logo"
+      },
+
+      "lines": [
+        {
+          "title": "PARTNER",
+          "text": "JA2 Technologies"
+        },
+        {
+          "title": "PROJECT",
+          "text": ">JA2 needs a reporting system for remote technicians and service people. Remote workers are often beyond cell coverage requiring that the system functions using a satellite solution."
+        },
+        {
+          "title": "RESULTS",
+          "text": "Biznas provided a 1st release MVP product demonstrating the capabilities of the check-in features and the messaging features.",
+          "extraData": [
+            { "line": "" }
+          ] 
+        },    
+        {
+          "title": "",
+          "text": ""
+        }
+      ]
+    }
+  ]
+}

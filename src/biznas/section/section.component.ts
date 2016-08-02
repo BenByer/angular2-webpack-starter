@@ -6,8 +6,8 @@ import { SectionContent } from './section.content';
 
 @Component({
   selector: 'biznas-section',
-  templateUrl: './section.component.html',
-  styleUrls: ['./section.component.css']
+  templateUrl: './section.template.html',
+  styleUrls: ['./section.style.css']
 })
 
 export class Section {

@@ -6,8 +6,8 @@ import { TimelineItemContent } from './timeline-item.content';
 
 @Component({
   selector: 'biznas-timeline-item',
-  templateUrl: './timeline-item.component.html',
-  styleUrls: ['./timeline-item.component.css']
+  templateUrl: './timeline-item.template.html',
+  styleUrls: ['./timeline-item.style.css']
 })
 
 

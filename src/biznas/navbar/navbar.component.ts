@@ -6,8 +6,8 @@ import { AppState } from '../../app/app.service';
 
 @Component({
   selector: 'biznas-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css'],
+  templateUrl: './navbar.template.html',
+  styleUrls: ['./navbar.style.css'],
   directives: [
     ...ROUTER_DIRECTIVES
   ],

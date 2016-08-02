@@ -6,8 +6,8 @@ import { SectionDifferentContent } from './section-different.content';
 
 @Component({
   selector: 'biznas-section-different',
-  templateUrl: './section-different.component.html',
-  styleUrls: ['./section-different.component.css']
+  templateUrl: './section-different.template.html',
+  styleUrls: ['./section-different.style.css']
 })
 
 export class SectionDifferent {

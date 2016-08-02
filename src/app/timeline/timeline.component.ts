@@ -7,8 +7,8 @@ import { TimelineContent } from './timeline.content';
 
 @Component({
   selector: 'biznas-timeline',
-  templateUrl: './timeline.component.html',
-  styleUrls: ['./timeline.component.css'],
+  templateUrl: './timeline.template.html',
+  styleUrls: ['./timeline.style.css'],
   directives: [ TimelineItemComponent ],
 })
 
@@ -20,5 +20,8 @@ export class TimelineComponent { // implements OnInit {
   //timelineItems: any[];
   //footer = '';
   constructor(private router: Router, public appState: AppState) {
+    console.log('TimelineComponent', this.content);
+  }
+  ngOnInit() {
   }
 }

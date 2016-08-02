@@ -6,8 +6,8 @@ import { AppState } from '../../app/app.service';
 
 @Component({
   selector: 'biznas-copyright',
-  templateUrl: './copyright.component.html',
-  styleUrls: ['./copyright.component.css'] 
+  templateUrl: './copyright.template.html',
+  styleUrls: ['./copyright.style.css'] 
 })
 
 export class CopyrightComponent {

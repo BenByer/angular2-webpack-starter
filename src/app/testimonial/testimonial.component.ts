@@ -2,6 +2,8 @@
 import { Router } from '@angular/router';
 import { AppState } from '../app.service';
 
+import { TestimonialContent } from './testimonial.content';
+
 
 @Component({
   selector: 'biznas-testimonial',
@@ -11,11 +13,15 @@ import { AppState } from '../app.service';
 
 export class Testimonial { // implements OnInit {
   @Input()
-  public content: any[];
+  public content: TestimonialContent;
 
   //title = '';
   //timelineItems: any[];
   //footer = '';
   constructor(private router: Router, public appState: AppState) {
+    console.log('Testimonial this.content', this.content);
+  }
+
+  ngOnInit() {
   }
 }

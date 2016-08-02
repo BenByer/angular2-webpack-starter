@@ -19,11 +19,14 @@ import { Footer } from '../../biznas/footer/footer.component';
 export class Process {
   headerData: any;
   sectionData: any;
+  testimonialData: any;
 
   constructor(public route: ActivatedRoute) {
     this.headerData = require('assets/processHeaderData.json');
     this.sectionData = require('assets/processSectionData.json');
-    console.log('Process sectionData.title', this.sectionData.title);
-    console.log('Process sectionData', this.sectionData);
+    this.testimonialData = require('assets/partners.json');
+    //console.log('Process sectionData.title', this.sectionData.title);
+    //console.log('Process sectionData', this.sectionData);
+    console.log('Process testimonialData', this.testimonialData);
  }
 }
